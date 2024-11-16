@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:wght@300&display=swap");
+@import url("utilities.css");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto;
+}
+
+/* ------------------------------- Index.html ---------------------------------- */
+
+/* Header Navbar: Account & Languages */
+.navbar {
+  background-color: #f9f9f9;
+  height: 55px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.navbar .container {
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .flex > *:last-child > * {
+  background-color: #e9e9e9;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: bolder;
+  padding: 13px 19px 11px 19px;
+  border-radius: 3px;
+  margin-right: 32px;
+}
+
+.navbar .flex > *:first-child > * {
+  padding: 2px 13px 7px 13px;
+  font-size: 14px;
+}
+
+.navbar .flex > *:first-child > span:first-child {
+  border-right: 1px solid #d9d9d9;
+  border-left: 1px solid #d9d9d9;
+}
+
+/* Advertisment: Ads & Info */
+.advertisment {
+  height: 330px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.myinfo .logo {
+  width: 43.5%;
+  padding: 10px 0;
+  margin-right: 32px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.myinfo div:last-child {
+  padding: 15px 10px;
+}
+
+.myinfo div:last-child p {
+  font-size: 12px;
+  line-height: 0.55cm;
+}
+
+.myinfo div:last-child p span {
+  font-size: 18px;
+}
+
+/* Activities */
+.activities {
+  border-bottom: 1px solid #d9d9d9;
+  height: 800px;
+  padding: 10px 0 15px 94px;
+  width: 100%;
+}
+
+.activities .map {
+  grid-column: 2 / span 2;
+  padding: 30px 150px 30px 50px;
+  position: relative;
+}
+
+.stories .postadd-free a {
+  width: 100%;
+  text-align: center;
+  background-color: #d83f3f;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.postadd-free > a > i {
+  font-size: 20px;
+}
+
+.stores {
+  width: 100%;
+  margin-top: 6px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+
+.stores > * {
+  width: 50%;
+  text-align: center;
+}
+
+.stores > *:first-child {
+  border-right: 1px solid #c9c9c9;
+}
+
+.stores > a > i {
+  font-size: 22px;
+}
+
+.stores > * > span,
+.feature span {
+  font-size: 13px;
+  font-weight: bold;
+  color: #555;
+}
+
+.storesinfo {
+  padding: 5px 50px 5px 0;
+}
+
+.storesinfo > p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.feature span {
+  color: #333;
+}
+
+.activities .stories .grid > div:last-child {
+  grid-column: 2 / span 2;
+}
+
+.activities .stories .grid > div:last-child .feature {
+  flex-direction: row;
+}
+
+.activities .stories .grid > div:last-child .feature i {
+  margin-right: 20px;
+}
+
+.activities .stories .grid > div:last-child .feature p {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.feature i {
+  color: #d83f3f;
+  font-size: 30px;
+}
+
+.feature:hover {
+  background-color: #d83f3f;
+}
+
+.feature:hover * {
+  color: #fff;
+}
+
+/* Activities: Map */
+.map .provence {
+  position: absolute;
+  width: 200px;
+  height: 70%;
+  bottom: 30px;
+  right: 0;
+}
+
+.provence > *:first-child {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.provence .triangle {
+  padding-left: 10px;
+  margin-bottom: 25px;
+}
+
+.provence .grid a {
+  font-size: 14px;
+  padding-top: 5px;
+  color: #555;
+}
+
+.activities > p {
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+.catagory a {
+  color: rgb(8, 82, 8);
+  border-bottom: 1px solid;
+  font-weight: bold;
+}
+
+/* Bottom Navigations */
+.navigation {
+  height: 230px;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 50px 0;
+}
+
+.navigation .container {
+  height: 100%;
+}
+
+.navigation .container > div:first-child {
+  margin-left: 15px;
+}
+
+.navigation .container > div:last-child {
+  margin-right: 15px;
+}
+
+.navigation .container > div > * {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.navigation .container > div > h3 {
+  margin-bottom: 15px;
+}
+.navigation .container > div > a {
+  font-size: 14px;
+  color: #555;
+}
+
+.app,
+.contactus,
+.payments {
+  text-align: center;
+}
+
+.app > p,
+.contactus > p,
+.payments > p {
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.app .flex > div,
+.contactus .flex > div,
+.payments .flex > div {
+  margin-bottom: 20px;
+}
+
+.app .flex div > p {
+  font-size: 10px;
+  text-align: center;
+}
+
+.app .flex > * {
+  background-color: #000;
+  color: #fff;
+  width: 50%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 2px;
+}
+
+.contactus > .flex,
+.payments > .flex {
+  justify-content: space-between;
+  width: 100%;
+  height: 47px;
+  margin-bottom: 20px;
+}
+
+.contactus .flex > *,
+.payments .flex > * {
+  background-color: #e9e9e9;
+  color: #333;
+  width: 18%;
+  padding-top: 10px;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 24px;
+  transition: all 0.2s;
+}
+
+.contactus .flex > *:hover,
+.payments .flex > *:hover {
+  background-color: #d83f3f;
+  color: #fff;
+}
+
+/* Partners */
+.partners {
+  height: 150px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.partners .flex {
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.partners .flex > div {
+  width: 200px;
+  height: 50%;
+  text-align: center;
+}
+
+.partners .flex > div > h5 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.partners .flex > div > p {
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(17, 131, 17);
+}
+
+/* Footer */
+.footer {
+  height: 50px;
+  background-color: #f9f9f9;
+  padding-top: 25px;
+}
+
+.footer .container {
+  height: 100%;
+}
+
+.footer .logo img {
+  width: 80%;
+  margin-left: -10px;
+}
+
+.footer .address {
+  grid-column: 2 / span 2;
+}
+
+.footer .address > * {
+  color: #555;
+  font-weight: 500;
+}
+
+.footer .address > p {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.footer .phone {
+  align-items: center;
+  justify-content: center;
+  padding-top: -20px;
+  height: 70%;
+}
+
+.phone i {
+  font-size: 26px;
+  margin-right: 10px;
+}
+
+.footer .container > div:last-child {
+  height: 70%;
+  align-items: center;
+}
+
+.footer .container > div:last-child > * {
+  color: #555;
+}
+
+.footer .container > div:last-child > p strong {
+  background-color: #999;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 500;
+  padding: 5px 8px;
+  opacity: 0.6;
+  cursor: pointer;
+}
